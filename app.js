@@ -5,7 +5,10 @@ const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static('./public'))
 
-const entries = [{'head': 'Запись 1', 'text': 'djksbgjkagbdgjkls'}, {'head': 'Запись 2', 'text': 'ajsdgj;dsgb'}]
+const entries = [
+    {'head': 'Post 1', 'text': 'djksbgjkagbdgjkls'},
+     {'head': 'Post 2', 'text': 'ajsdgj;dsgb'},
+    ]
 
 app.get('/', (req, res) => {
     res.render('index', {
