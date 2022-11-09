@@ -5,8 +5,13 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repudiandae tempore alias. Architecto alias, nihil molestiae nesciunt, aut aspernatur a ab officiis harum ex pariatur aperiam cumque dolores quod rem.</p>
 
     <% entries.forEach((entry) => { %>
-        <h3><%= entry.head %> </h3>
-        <p><%= entry.text %></p>
+
+        <% var length = 100; %> 
+        <% var myString = entry.text; %> 
+        <% var myTruncatedString = myString.substring(0,length); %>
+        
+        <h3><%= entry.head %></h3>
+        <p><%= myTruncatedString %>... <a href="#">Read More</a> </p>
     <% }) %> 
 
 </div>
