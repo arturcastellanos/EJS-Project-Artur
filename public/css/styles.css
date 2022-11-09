@@ -1,3 +1,7 @@
-body {
-    background-color: grey;
+.container-fluid {
+    padding: 0px 15%;
+}
+
+.footer {
+    margin-bottom: 0px;
 }

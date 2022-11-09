@@ -1,6 +1,16 @@
 <%- include('particles/header.ejs') %> 
 
-<h1>Hi</h1>
+<div class="container-fluid">
+    <h1>Home</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repudiandae tempore alias. Architecto alias, nihil molestiae nesciunt, aut aspernatur a ab officiis harum ex pariatur aperiam cumque dolores quod rem.</p>
+
+    <% entries.forEach((entry) => { %>
+        <h2><%= entry.head %> </h2>
+        <p><%= entry.text %></p>
+    <% }) %> 
+
+</div>
+
 
 
 <%- include('particles/footer.ejs') %> 
