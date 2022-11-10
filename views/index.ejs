@@ -10,8 +10,10 @@
         <% var myString = entry.text; %> 
         <% var myTruncatedString = myString.substring(0,length); %>
         
+        <% let reference = "posts/" + entry.id %> 
+
         <h3><%= entry.head %></h3>
-        <p><%= myTruncatedString %>... <a href="#">Read More</a> </p>
+        <p><%= myTruncatedString %>... <a href="<%= reference %>">Read More</a> </p>
     <% }) %> 
 
 </div>

@@ -1,0 +1,16 @@
+<%- include('particles/header.ejs') %> 
+
+<div class="container-fluid">
+    
+    <% entries.forEach((entry) => { %>
+        <% var length = 100; %> 
+        <% var myString = entry.text; %> 
+        <% var myTruncatedString = myString.substring(0,length); %>
+        
+        <h3><%= entry.head %></h3>
+        <p><%= entry.text %></p>
+    <% }) %> 
+
+</div>
+
+<%- include('particles/footer.ejs') %> 
